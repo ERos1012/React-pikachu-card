@@ -1,38 +1,69 @@
-.App {
+.detailsBtn {
+  text-transform: uppercase;
+  padding: 8px;
+  background-color: black;
+  color: red;
+}
+
+.card {
   text-align: center;
+  background-color: orange;
+  max-width:400px;
+  margin: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pikachuImage{
+  height: auto;
+  width: 200px;
+  padding: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.title {
+  font-size: 60px;
+  margin: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragraph {
+  font-size: 20px;
+  margin: 16px 8px 8px;
+  border: 3px solid #555;
+}
+
+@media only screen and (max-width: 500px) {
+  .detailsBtn {
+    visibility: hidden;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (min-width: 800px) {
+  .detailsBtn {
+    visibility: hidden;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 500px) {
+  .card {
+    width: 300px;
+    height: auto;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+  .detailsBtn {
+    width: 150px;
+    height: auto;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons button:hover {
+  background-color: pink;
+  color: red;
+}
+
+.buttons button:focus {
+  background-color: green;
 }
